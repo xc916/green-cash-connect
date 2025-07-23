@@ -13,34 +13,24 @@ import {
 const Features = () => {
   const features = [
     {
-      icon: <Clock className="w-8 h-8" />,
-      title: "Quick Approval",
-      description: "Get approved in as little as 5 minutes with our automated system"
-    },
-    {
-      icon: <Smartphone className="w-8 h-8" />,
-      title: "Mobile First",
-      description: "Apply anywhere, anytime with our mobile-optimized platform"
-    },
-    {
-      icon: <Shield className="w-8 h-8" />,
-      title: "Secure & Safe",
-      description: "Bank-grade security with 256-bit SSL encryption"
-    },
-    {
-      icon: <CreditCard className="w-8 h-8" />,
-      title: "Flexible Repayment",
-      description: "Choose repayment terms that work best for your situation"
-    },
-    {
       icon: <Users className="w-8 h-8" />,
-      title: "No Collateral",
-      description: "Get loans without providing collateral or guarantors"
+      title: "No Collateral Required",
+      description: "Borrow with confidence; no assets or guarantors needed."
+    },
+    {
+      icon: <Clock className="w-8 h-8" />,
+      title: "Instant Disbursement", 
+      description: "Funds transferred directly to your bank account."
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
-      title: "Build Credit Score",
-      description: "Improve your credit rating with timely repayments"
+      title: "Higher Loan Limits",
+      description: "Access increased loan amounts upon timely repayments."
+    },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: "Secure & Reliable",
+      description: "Your information is protected with advanced encryption and handled with utmost care."
     }
   ];
 
