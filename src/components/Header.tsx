@@ -1,0 +1,111 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X, Phone, Mail } from "lucide-react";
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navItems = [
+    { name: "Home", href: "#home" },
+    { name: "Calculator", href: "#calculator" },
+    { name: "Features", href: "#features" },
+    { name: "Apply", href: "#apply" },
+    { name: "Contact", href: "#contact" }
+  ];
+
+  return (
+    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b z-50">
+      <div className="container mx-auto px-4">
+        {/* Top bar */}
+        <div className="hidden md:flex justify-between items-center py-2 text-sm border-b">
+          <div className="flex items-center space-x-6">
+            <div className="flex items-center space-x-2 text-muted-foreground">
+              <Phone className="w-4 h-4" />
+              <span>+234 (0) 800 FAST LOAN</span>
+            </div>
+            <div className="flex items-center space-x-2 text-muted-foreground">
+              <Mail className="w-4 h-4" />
+              <span>support@fastcash.ng</span>
+            </div>
+          </div>
+          <div className="text-muted-foreground">
+            Safe • Secure • Licensed by CBN
+          </div>
+        </div>
+
+        {/* Main navigation */}
+        <div className="flex justify-between items-center py-4">
+          {/* Logo */}
+          <div className="flex items-center space-x-2">
+            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-xl">₦</span>
+            </div>
+            <div>
+              <div className="font-bold text-xl text-primary">FastCash</div>
+              <div className="text-xs text-muted-foreground">Quick Loans Nigeria</div>
+            </div>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            {navItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-foreground hover:text-primary transition-colors font-medium"
+              >
+                {item.name}
+              </a>
+            ))}
+          </nav>
+
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center space-x-4">
+            <Button variant="outline">
+              Login
+            </Button>
+            <Button>
+              Apply Now
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden py-4 border-t">
+            <nav className="space-y-4">
+              {navItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="block text-foreground hover:text-primary transition-colors font-medium"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </a>
+              ))}
+              <div className="pt-4 space-y-2">
+                <Button variant="outline" className="w-full">
+                  Login
+                </Button>
+                <Button className="w-full">
+                  Apply Now
+                </Button>
+              </div>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+};
+
+export default Header;
