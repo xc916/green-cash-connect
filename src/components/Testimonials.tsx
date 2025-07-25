@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Star, Quote } from "lucide-react";
-import successImage from "@/assets/success-image.jpg";
+import testimonialsImage from "@/assets/testimonials-image.jpg";
 
 const Testimonials = () => {
   const testimonials = [
@@ -83,7 +83,7 @@ const Testimonials = () => {
           {/* Success Image */}
           <div className="relative">
             <img 
-              src={successImage} 
+              src={testimonialsImage} 
               alt="Nigerian professionals celebrating financial success" 
               className="w-full h-auto rounded-2xl shadow-xl"
             />
