@@ -18,12 +18,10 @@ const Hero = () => {
           <div className="text-white space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                Fast Cash Loans
-                <span className="block text-primary-light">When You Need It Most</span>
+                Bridge Your Gap
               </h1>
               <p className="text-xl text-white/90 max-w-lg">
-                Get instant access to cash loans up to ₦500,000 with flexible repayment terms. 
-                Apply in minutes, get approved in hours.
+                Turn financial hurdles into opportunities.
               </p>
             </div>
 
@@ -58,21 +56,22 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* CTA Buttons */}
+            {/* Download Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg" 
                 className="bg-white text-primary hover:bg-white/90 shadow-lg text-lg px-8 py-6 h-auto"
               >
-                Apply for Loan Now
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <Smartphone className="mr-2 w-5 h-5" />
+                Google Play
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
                 className="border-white/30 text-white hover:bg-white/10 text-lg px-8 py-6 h-auto"
               >
-                Calculate Loan
+                <Smartphone className="mr-2 w-5 h-5" />
+                App Store
               </Button>
             </div>
           </div>

@@ -61,9 +61,6 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline">
-              Login
-            </Button>
             <Button>
               Apply Now
             </Button>
@@ -93,9 +90,6 @@ const Header = () => {
                 </a>
               ))}
               <div className="pt-4 space-y-2">
-                <Button variant="outline" className="w-full">
-                  Login
-                </Button>
                 <Button className="w-full">
                   Apply Now
                 </Button>
