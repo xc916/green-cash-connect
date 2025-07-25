@@ -98,28 +98,6 @@ const Testimonials = () => {
           </div>
         </div>
 
-        {/* Trust Indicators */}
-        <div className="bg-accent/30 rounded-2xl p-8">
-          <h3 className="text-2xl font-bold text-center mb-8">Trusted by Thousands</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">50,000+</div>
-              <div className="text-muted-foreground">Customers Served</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">₦2.5B+</div>
-              <div className="text-muted-foreground">Loans Disbursed</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">98%</div>
-              <div className="text-muted-foreground">Approval Rate</div>
-            </div>
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">4.9/5</div>
-              <div className="text-muted-foreground">Customer Rating</div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

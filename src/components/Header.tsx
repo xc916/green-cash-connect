@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,22 +16,6 @@ const Header = () => {
   return (
     <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b z-50">
       <div className="container mx-auto px-4">
-        {/* Top bar */}
-        <div className="hidden md:flex justify-between items-center py-2 text-sm border-b">
-          <div className="flex items-center space-x-6">
-            <div className="flex items-center space-x-2 text-muted-foreground">
-              <Phone className="w-4 h-4" />
-              <span>+234 (0) 800 FAST LOAN</span>
-            </div>
-            <div className="flex items-center space-x-2 text-muted-foreground">
-              <Mail className="w-4 h-4" />
-              <span>support@fastcash.ng</span>
-            </div>
-          </div>
-          <div className="text-muted-foreground">
-            Safe • Secure • Licensed by CBN
-          </div>
-        </div>
 
         {/* Main navigation */}
         <div className="flex justify-between items-center py-4">
